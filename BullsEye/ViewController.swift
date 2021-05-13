@@ -8,6 +8,8 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var value = 50
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,13 +19,16 @@ class ViewController: UIViewController {
    
     @IBAction func showAlert() {
         
+        let message = "The value of the slider is: \(value)"
+
+        
           let alert = UIAlertController(
             title: "Hello, World",
-            message: "This is my first app!",
+            message: message,
             preferredStyle: .alert)
 
           let action = UIAlertAction(
-            title: "Awesome",
+            title: "OK",
             style: .default,
             handler: nil)
 
@@ -32,9 +37,10 @@ class ViewController: UIViewController {
     
     }
     
-    func test() -> Void {
-        
+    @IBAction func sliderMoved(_ slider: UISlider) {
+        value = lroundf(slider.value)
     }
-
+    
+  
 }
 
