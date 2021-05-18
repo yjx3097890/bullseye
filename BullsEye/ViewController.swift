@@ -22,35 +22,73 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    
-       startNewGame()
+        
+        let thumbImageNormal = UIImage(named: "SliderThumb-Normal")
+        slider.setThumbImage(thumbImageNormal, for: .normal)
+        
+        let thumbHighlighted = UIImage(named: "SliderThumb-Highlighted")
+        slider.setThumbImage(thumbHighlighted, for: .highlighted)
+        
+        let insets = UIEdgeInsets(
+          top: 0,
+          left: 14,
+          bottom: 0,
+          right: 14)
+        
+        let trackLeftImage = UIImage(named: "SliderTrackLeft")!
+        let trackLeftResizable = trackLeftImage.resizableImage(withCapInsets: insets)
+        slider.setMinimumTrackImage(trackLeftResizable, for: .normal)
+        
+        let trackRightImage = UIImage(named: "SliderTrackRight")!
+        let trackRightResizable = trackRightImage.resizableImage(withCapInsets: insets)
+        slider.setMaximumTrackImage(trackRightResizable, for: .normal)
+        
+        
+        
+        
+        resetGame()
+        
     }
     
    
     @IBAction func showAlert() {
         
         let diff = abs(targetValue - value)
-        let points = 100 - diff
+        var points = 100 - diff
+        let title: String
+
+        
+        switch diff {
+            case 0:
+                title = "Perfect"
+                points += 100
+            case 0...5:
+                title = "You almost had it!"
+                if diff == 1 {
+                    points += 50
+                }
+            case 5...10:
+                title = "Pretty good!"
+            default:
+                title = "笨猪"
+        }
+        
         totalScore += points
         round += 1
-        
-//        let message = "The value of the slider is: \(value).\n" +
-//        "The target value is: \(targetValue).\n" +
-//        "The difference is: \(diff) "
         
         let message = "Your score is \(points)."
 
         
           let alert = UIAlertController(
-            title: "Hello, World",
+            title:  title,
             message: message,
             preferredStyle: .alert)
 
           let action = UIAlertAction(
             title: "OK",
-            style: .default,
-            handler: {_ in self.startNewGame()})
+            style: .default) {(_) in
+            self.startNewGame()
+          }
 
           alert.addAction(action)
           present(alert, animated: true, completion: nil)
@@ -59,6 +97,12 @@ class ViewController: UIViewController {
     
     @IBAction func sliderMoved(_ slider: UISlider) {
         value = lroundf(slider.value)
+    }
+    
+    @IBAction func resetGame() {
+        totalScore = 0
+        round = 1
+        startNewGame()
     }
     
     func startNewGame() {

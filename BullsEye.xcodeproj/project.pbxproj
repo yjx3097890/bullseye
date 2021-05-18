@@ -13,6 +13,8 @@
 		0918D5E4264A2DD2004B74CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0918D5E2264A2DD2004B74CD /* Main.storyboard */; };
 		0918D5E6264A2DD7004B74CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0918D5E5264A2DD7004B74CD /* Assets.xcassets */; };
 		0918D5E9264A2DD7004B74CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0918D5E7264A2DD7004B74CD /* LaunchScreen.storyboard */; };
+		0918D5F326529ECE004B74CD /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0918D5F226529ECE004B74CD /* AboutViewController.swift */; };
+		0918D5F526534EF6004B74CD /* BullsEye.html in Resources */ = {isa = PBXBuildFile; fileRef = 0918D5F426534EF6004B74CD /* BullsEye.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		0918D5E8264A2DD7004B74CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0918D5EA264A2DD7004B74CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0918D5F0264BDED7004B74CD /* test.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = test.playground; path = ../../test.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		0918D5F226529ECE004B74CD /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		0918D5F426534EF6004B74CD /* BullsEye.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = BullsEye.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,11 +61,13 @@
 		0918D5DB264A2DD2004B74CD /* BullsEye */ = {
 			isa = PBXGroup;
 			children = (
+				0918D5F426534EF6004B74CD /* BullsEye.html */,
 				0918D5F0264BDED7004B74CD /* test.playground */,
 				0918D5DC264A2DD2004B74CD /* AppDelegate.swift */,
 				0918D5DE264A2DD2004B74CD /* SceneDelegate.swift */,
 				0918D5E0264A2DD2004B74CD /* ViewController.swift */,
 				0918D5E2264A2DD2004B74CD /* Main.storyboard */,
+				0918D5F226529ECE004B74CD /* AboutViewController.swift */,
 				0918D5E5264A2DD7004B74CD /* Assets.xcassets */,
 				0918D5E7264A2DD7004B74CD /* LaunchScreen.storyboard */,
 				0918D5EA264A2DD7004B74CD /* Info.plist */,
@@ -127,6 +133,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0918D5E9264A2DD7004B74CD /* LaunchScreen.storyboard in Resources */,
+				0918D5F526534EF6004B74CD /* BullsEye.html in Resources */,
 				0918D5E6264A2DD7004B74CD /* Assets.xcassets in Resources */,
 				0918D5E4264A2DD2004B74CD /* Main.storyboard in Resources */,
 			);
@@ -141,6 +148,7 @@
 			files = (
 				0918D5E1264A2DD2004B74CD /* ViewController.swift in Sources */,
 				0918D5DD264A2DD2004B74CD /* AppDelegate.swift in Sources */,
+				0918D5F326529ECE004B74CD /* AboutViewController.swift in Sources */,
 				0918D5DF264A2DD2004B74CD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
