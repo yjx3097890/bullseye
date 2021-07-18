@@ -26,7 +26,6 @@
 		0918D5E5264A2DD7004B74CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0918D5E8264A2DD7004B74CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0918D5EA264A2DD7004B74CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0918D5F0264BDED7004B74CD /* test.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = test.playground; path = ../../test.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		0918D5F226529ECE004B74CD /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		0918D5F426534EF6004B74CD /* BullsEye.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = BullsEye.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -62,7 +61,6 @@
 			isa = PBXGroup;
 			children = (
 				0918D5F426534EF6004B74CD /* BullsEye.html */,
-				0918D5F0264BDED7004B74CD /* test.playground */,
 				0918D5DC264A2DD2004B74CD /* AppDelegate.swift */,
 				0918D5DE264A2DD2004B74CD /* SceneDelegate.swift */,
 				0918D5E0264A2DD2004B74CD /* ViewController.swift */,
